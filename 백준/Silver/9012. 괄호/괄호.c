@@ -17,14 +17,13 @@ int main() {
 			else {
 				count--;
 				if (count < 0) {
-					strcpy(list[i], "NO\n");
 					break;
 				}
 			}
 		}
 
 		if (count == 0) strcpy(list[i], "YES\n");
-		else if (count > 0) strcpy(list[i], "NO\n");
+		else strcpy(list[i], "NO\n");
 	}
 
 	for (int i = 0; i < t; i++) {
