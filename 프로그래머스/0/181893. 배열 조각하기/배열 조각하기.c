@@ -8,9 +8,9 @@ int* solution(int arr[], size_t arr_len, int query[], size_t query_len) {
 
     for (int i = 0; i < query_len; i++) {
         if (i % 2 == 0) {
-            end = start + query[i]; // 앞부분 유지
+            end = start + query[i];
         } else {
-            start = start + query[i]; // 뒷부분 유지
+            start = start + query[i];
         }
     }
 
